@@ -25,4 +25,5 @@ Gem::Specification.new do |s|
   s.add_development_dependency 'shotgun' 
   s.add_development_dependency 'rspec',     '2.6.0'
   s.add_development_dependency 'capybara',  '~> 1.0.0'
+  s.add_development_dependency 'jasmine',   '1.0.2.1'
 end
