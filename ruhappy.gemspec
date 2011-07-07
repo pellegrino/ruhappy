@@ -5,8 +5,8 @@ require "ruhappy/version"
 Gem::Specification.new do |s|
   s.name        = "ruhappy"
   s.version     = Ruhappy::VERSION
-  s.authors     = ["Vitor Pellgrino"]
-  s.email       = ["vitorp@gmail.com"]
+  s.authors     = ["Vitor Pellgrino","Rodrigo Pinto"]
+  s.email       = ["vitorp@gmail.com", "rodrigopqn@gmail.com"]
   s.homepage    = ""
   s.summary     = %q{TODO: Write a gem summary}
   s.description = %q{TODO: Write a gem description}
@@ -18,5 +18,8 @@ Gem::Specification.new do |s|
   s.executables   = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
   s.require_paths = ["lib"]
 
-  s.add_development_dependency 'rspec' 
+  s.add_dependency 'haml',            '3.1.2'
+  s.add_dependency 'pivotal-tracker', '0.3.1'
+
+  s.add_development_dependency 'rspec'
 end
