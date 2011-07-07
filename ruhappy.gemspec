@@ -22,6 +22,7 @@ Gem::Specification.new do |s|
   s.add_dependency 'pivotal-tracker', '0.3.1'
   s.add_dependency 'sinatra',         '1.2.6'
 
-  s.add_development_dependency 'rspec'      '2.6.0'
+  s.add_development_dependency 'shotgun' 
+  s.add_development_dependency 'rspec',     '2.6.0'
   s.add_development_dependency 'rack-test', '0.6.0'
 end
