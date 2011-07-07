@@ -20,6 +20,7 @@ Gem::Specification.new do |s|
 
   s.add_dependency 'haml',            '3.1.2'
   s.add_dependency 'pivotal-tracker', '0.3.1'
+  s.add_dependency 'sinatra',         '1.2.6'
 
   s.add_development_dependency 'rspec'
 end
