@@ -1,0 +1,4 @@
+Ruhappy.configure do |config| 
+  config.pivotal_tracker_token   = '1234' 
+  config.pivotal_tracker_project = '5678'
+end 
