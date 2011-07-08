@@ -3,9 +3,8 @@ require 'pivotal_tracker'
 module Ruhappy
   class Story
     def self.completed_stories
-      # TODO: remove hardcoded project and token information  
-      PivotalTracker::Client.token = 'yourtoken'
-      @project = PivotalTracker::Project.find(326091)
+      PivotalTracker::Client.token =          Ruhappy.configuration.pivotal_tracker_token
+      @project = PivotalTracker::Project.find Ruhappy.configuration.pivotal_tracker_project
       @project.stories.all 
     end 
   end 

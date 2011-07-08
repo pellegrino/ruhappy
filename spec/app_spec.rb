@@ -1,19 +1,18 @@
 require 'spec_helper'
 
 describe Ruhappy::App do
-  it 'should fetch every pivotal tracker story' do
-    Ruhappy::Story.stub!(:completed_stories).and_return(mock_stories)
-    mock_stories.stub!(:to_json).and_return("stories in json format") 
-    stories = Ruhappy::Story.completed_stories
+  context "GET /stories should fetch every pivotal tracker story" do
+    before do 
+      Ruhappy::Story.stub_chain(:completed_stories, :to_json).and_return "json" 
+      get '/stories'
+    end 
 
-    get '/stories'
+    it "should return found stories converted to json" do
+      last_response.body.should == 'json' 
+    end   
 
-    last_response.should be_ok 
-    last_response.body.should == "stories in json format" 
+    it "should return the response using a json content_type" do 
+      last_response.content_type.should == 'application/json' 
+    end 
   end 
-end 
-
-private 
-def mock_stories(stubs={})
-  @mock_stories ||= mock(Ruhappy::Story, stubs).as_null_object 
 end 
