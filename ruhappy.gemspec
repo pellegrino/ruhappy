@@ -24,5 +24,5 @@ Gem::Specification.new do |s|
 
   s.add_development_dependency 'shotgun' 
   s.add_development_dependency 'rspec',     '2.6.0'
-  s.add_development_dependency 'rack-test', '0.6.0'
+  s.add_development_dependency 'capybara',  '~> 1.0.0'
 end
