@@ -11,8 +11,5 @@ describe Ruhappy::App do
       page.should have_content "myawesomecompletestories"
     end   
 
-    it "should return the response using a json content_type" do 
-      page.response_headers['Content-Type'].should == 'application/json' 
-    end 
   end 
 end 
