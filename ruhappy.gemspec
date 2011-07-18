@@ -7,9 +7,9 @@ Gem::Specification.new do |s|
   s.version     = Ruhappy::VERSION
   s.authors     = ["Vitor Pellgrino","Rodrigo Pinto"]
   s.email       = ["vitorp@gmail.com", "rodrigopqn@gmail.com"]
-  s.homepage    = ""
-  s.summary     = %q{TODO: Write a gem summary}
-  s.description = %q{TODO: Write a gem description}
+  s.homepage    = "http://pellegrino.github.com/ruhappy"
+  s.summary     = %q{User feedback toolbar}
+  s.description = %q{Adds a toolbar to your rack app that provides your key users the possibility of giving feedback about your delivered stories}
 
   s.rubyforge_project = "ruhappy"
 
