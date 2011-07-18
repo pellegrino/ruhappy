@@ -1,9 +1,11 @@
 %div.ruhappy 
-  %span.header Are u Happy? 
+  %h3.header Are u Happy? 
   - @stories.each do |story| 
     %ul.stories
       %li
-        %span.description= story.name 
-        %a.thumbs-up I am F%#$@^* Happy!
-        %a.thumbs-down D'ooooooh!!
+        %h4.name=       story.name
+        %p.description= story.description 
+        %ul.actions 
+          %li Thumbs Up
+          %li Thumbs Down 
   - 
