@@ -6,11 +6,14 @@
 
 ## Integrating to your rails app
   1. Add ruhappy to your gemfile
-        gem 'ruhappy' 
+
+      gem 'ruhappy' 
 
   1. Create a config/initializers/ruhappy.rb with your pivotal tracker information 
+
   1. Mount ruhappy application in your config/routes.rb 
-        mount Ruhappy::App, :at => "/ruhappy" 
+  
+      mount Ruhappy::App, :at => "/ruhappy" 
 
 
 ## Demo
