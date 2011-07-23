@@ -1,0 +1,18 @@
+div.ruhappy{
+  position: absolute;
+  bottom: 0;
+	margin-left: 150px;
+	background: #345345;
+}
+
+div.ruhappy h3{
+  padding: 0 10px;
+}
+
+div.content{
+  display: none;
+}
+
+ul{
+  text-decoration: none;
+}

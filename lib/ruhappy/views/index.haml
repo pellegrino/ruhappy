@@ -1,11 +1,12 @@
-%div.ruhappy 
-  %h3.header Are u Happy? 
-  - @stories.each do |story| 
-    %ul.stories
-      %li
-        %h4.name=       story.name
-        %p.description= story.description 
-        %ul.actions 
-          %li Thumbs Up
-          %li Thumbs Down 
-  - 
+%link{:rel=>"stylesheet", :href=>"/css/screen.css", :type=>"text/css", :media=>"screen"}
+%div.ruhappy
+  %h3.header{:onclick=>"AreYouHappy.show(this);" } Are u Happy?
+  %div.content
+    - @stories.each do |story| 
+      %ul.stories
+        %li.name
+          = story.name
+          %img{:src=>'/images/thumb_up_icon.svg.png', :width=>"32", :height=>"32" }
+          %img{:src=>'/images/thumb_down_icon.svg.png', :width=>"32", :height=>"32" }
+          %p.description= story.description 
+    -
